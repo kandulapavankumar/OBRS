@@ -1,0 +1,230 @@
+<?php echo $this->doctype(); ?>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - HTML5 Booking template</title>
+
+    <!-- Le styles -->
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        ->prependStylesheet($this->basePath() . '/css/style.css')
+        ->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+
+        ->prependStylesheet($this->basePath() . '/css/theme/custom.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/carousel/carousel.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/font-awesome.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/fullwidth.css')
+        ->prependStylesheet($this->basePath() . '/js/libraries/rs-plugin/css/settings2.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/jquery-ui.css')
+        ->prependStylesheet($this->basePath() . '/css/home.css')
+    ?>
+
+    <!--[if lt IE 9]>
+    <script src="<?php echo $this->basePath(); ?>/js/theme/html5shiv.js"></script>
+    <script src="<?php echo $this->basePath(); ?>/js/theme/respond.min.js"></script>
+    <![endif]-->
+    <link href='<?php echo $this->basePath(); ?>/css/google-font1.css' rel='stylesheet' type='text/css'>
+    <link href='<?php echo $this->basePath(); ?>/css/google-font2.css' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="<?php echo $this->basePath(); ?>/css/theme/font-awesome-ie7.css" media="screen" /><![endif]-->
+
+    <!-- jQuery -->
+    <script src="<?php echo $this->basePath(); ?>/js/theme/jquery.v2.0.3.js"></script>
+
+
+</head>
+<body id="top">
+<script>
+    var has_identity = "<?php echo $this->has_identity; ?>";
+    var baseUrl = "<?php echo $this->basePath(); ?>";
+</script>
+<!-- Top wrapper -->
+<div class="navbar-wrapper2 navbar-fixed-top">
+    <div class="container">
+        <div class="navbar mtnav">
+
+            <div class="container offset-3">
+                <!-- Navigation-->
+                <div class="navbar-header" style="margin-top: -13px">
+                    <button data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="index.html" class="navbar-brand"><img src="<?php echo $this->basePath(); ?>/img/sakalalogo.png" alt="Travel Agency Logo" class="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-left" style="font-weight: bold;margin-left: 30px">
+                        <li><a href="<?php echo $this->basePath(); ?>">Home </a></li>
+                        <li><a href="#">Bus</a></li>
+                        <li><a href="#">Train</a></li>
+                        <li><a href="#">Flights</a></li>
+                        <li><a href="#">Hotels</a></li>
+                        <li><a href="#">Cars</a></li>
+                        <li><a href="#">Recharge</a></li>
+
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                    <?php if($this->user_name != ''){?>
+                        <li class="dropdown open">
+                            <a data-toggle="dropdown" class="dropdown-toggle" href="#"><?php echo $this->user_name; ?><b class="lightcaret mt-2"></b></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="<?php echo $this->basePath(); ?>/application/index/profile">Profile</a></li>
+                                <li><a href="<?php echo $this->basePath(); ?>/user/logout">Logout</a></li>
+                            </ul>
+                        </li>
+                    <?php } else { ?>
+                        <li><a href="<?php echo $this->basePath(); ?>/user/login" class="login_button margin-right10p">Sign In</a></li>
+                        <li><a href="<?php echo $this->basePath(); ?>/application/index/profile" class="login_button">Sign Up</a></li>
+                    <?php } ?>
+                    </ul>
+                </div>
+                <!-- /Navigation-->
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- / Top wrapper -->
+
+<!-- Blue background -->
+<div class="mtslide2 sliderbg2"></div>
+<!-- / Blue background -->
+
+<!-- WRAP -->
+<div class="wrap ctup" >
+    <div class="clearfix"></div><br/>
+    <div class="">
+        <?php echo $this->content; ?>
+    </div> <!-- /container -->
+    <div class="clearfix"></div><br/>
+<!-- FOOTER -->
+<div class="container none">
+    <footer>
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2013 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+</div>
+
+<div class="footerbg">
+    <div class="container">
+
+        <div class="col-md-3">
+            <span class="ftitle">Let's socialize</span>
+            <div class="scont">
+                <a href="#" class="social1b"><img src="<?php echo $this->basePath(); ?>/img/theme/icon-facebook.png" alt=""/></a>
+                <a href="#" class="social2b"><img src="<?php echo $this->basePath(); ?>/img/theme/icon-twitter.png" alt=""/></a>
+                <a href="#" class="social3b"><img src="<?php echo $this->basePath(); ?>/img/theme/icon-gplus.png" alt=""/></a>
+                <a href="#" class="social4b"><img src="<?php echo $this->basePath(); ?>/img/theme/icon-youtube.png" alt=""/></a>
+                <br/><br/><br/>
+                <img src="<?php echo $this->basePath(); ?>/img/theme/logosmal.png" alt="" /><br/>
+                &copy; 2013  |  <a href="#">Privacy Policy</a><br/>
+                All Rights Reserved
+                <br/><br/>
+
+            </div>
+        </div>
+        <!-- End of column 1-->
+
+        <div class="col-md-3">
+            <span class="ftitle">Travel Specialists</span>
+            <br/><br/>
+            <ul class="footerlist">
+                <li><a href="#">Golf Vacations</a></li>
+                <li><a href="#">Ski & Snowboarding</a></li>
+                <li><a href="#">Disney Parks Vacations</a></li>
+                <li><a href="#">Disneyland Vacations</a></li>
+                <li><a href="#">Disney World Vacations</a></li>
+                <li><a href="#">Vacations As Advertised</a></li>
+            </ul>
+        </div>
+        <!-- End of column 2-->
+
+        <div class="col-md-3">
+            <span class="ftitle">Travel Specialists</span>
+            <br/><br/>
+            <ul class="footerlist">
+                <li><a href="#">Weddings</a></li>
+                <li><a href="#">Accessible Travel</a></li>
+                <li><a href="#">Disney Parks</a></li>
+                <li><a href="#">Cruises</a></li>
+                <li><a href="#">Round the World</a></li>
+                <li><a href="#">First Class Flights</a></li>
+            </ul>
+        </div>
+        <!-- End of column 3-->
+
+        <div class="col-md-3 grey">
+            <span class="ftitle">Newsletter</span>
+            <div class="relative">
+                <input type="email" class="form-control fccustom2" id="exampleInputEmail1" placeholder="Enter email">
+                <button type="submit" class="btn btn-default btncustom">Submit<img src="<?php echo $this->basePath(); ?>/img/theme/arrow.png" alt=""/></button>
+            </div>
+            <br/><br/>
+            <span class="ftitle">Customer support</span><br/>
+            <span class="pnr">1-xxx-xxx-xxxx</span><br/>
+            info@sakala.com
+        </div>
+        <!-- End of column 4-->
+
+
+
+
+
+    </div>
+</div>
+
+<div class="footerbg3">
+    <div class="container center grey">
+        <a href="#">Home</a> |
+        <a href="#">About</a> |
+        <a href="#">Last minute</a> |
+        <a href="#">Early booking</a> |
+        <a href="#">Special offers</a> |
+        <a href="#">Blog</a> |
+        <a href="#">Contact</a>
+        <a href="#top" class="gotop scroll"><img src="<?php echo $this->basePath(); ?>/img/theme/spacer.png" alt=""/></a>
+    </div>
+</div>
+
+
+
+</div>
+<!-- WRAP -->
+
+
+<!-- Javascript -->
+
+
+<script src="<?php echo $this->basePath(); ?>/js/theme/functions.js"></script>
+
+
+<!-- Picker UI-->
+<script src="<?php echo $this->basePath(); ?>/js/theme/jquery-ui.js"></script>
+
+<!-- Easing -->
+<script src="<?php echo $this->basePath(); ?>/js/theme/jquery.easing.js"></script>
+
+<!-- jQuery KenBurn Slider  -->
+<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/libraries/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+
+<!-- Nicescroll  -->
+<script src="<?php echo $this->basePath(); ?>/js/theme/jquery.nicescroll.min.js"></script>
+
+<!-- CarouFredSel -->
+<script src="<?php echo $this->basePath(); ?>/js/theme/jquery.carouFredSel-6.2.1-packed.js"></script>
+<script src="<?php echo $this->basePath(); ?>/js/theme/helper-plugins/jquery.touchSwipe.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/theme/helper-plugins/jquery.mousewheel.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/theme/helper-plugins/jquery.transit.min.js"></script>
+<script type="text/javascript" src="<?php echo $this->basePath(); ?>/js/theme/helper-plugins/jquery.ba-throttle-debounce.min.js"></script>
+
+<!-- Custom Select -->
+<script type='text/javascript' src='<?php echo $this->basePath(); ?>/js/theme/jquery.customSelect.js'></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="<?php echo $this->basePath(); ?>/js/bootstrap.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency - HTML5 Booking template</title>
+    <?php echo $this->headLink(array('rel' => 'shortcut icon', 'type' => 'image/vnd.microsoft.icon', 'href' => $this->basePath() . '/img/favicon.ico'))
+        //->prependStylesheet($this->basePath() . '/css/style.css')
+        //->prependStylesheet($this->basePath() . '/css/bootstrap-theme.min.css')
+        ->prependStylesheet($this->basePath() . '/css/bootstrap.min.css')
+
+        ->prependStylesheet($this->basePath() . '/css/theme/custom.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/carousel/carousel.css')
+        ->prependStylesheet($this->basePath() . '/js/libraries/animo/animate+animo.css')
+        ->prependStylesheet($this->basePath() . '/css/theme/font-awesome.css')
+        //->prependStylesheet($this->basePath() . '/js/libraries/rs-plugin/css/settings2.css')
+        //->prependStylesheet($this->basePath() . '/css/theme/jquery-ui.css')
+    ?>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:700,400,300,300italic' rel='stylesheet' type='text/css'>
+    <!--[if lt IE 7]><link rel="stylesheet" type="text/css" href="assets/css/font-awesome-ie7.css" media="screen" /><![endif]-->
+
+    <!-- Load jQuery -->
+    <script src="<?php echo $this->basePath(); ?>/js/theme/jquery.v2.0.3.js"></script>
+
+
+
+
+</head>
+<body>
+<!-- 100% Width & Height container  -->
+<div class="login-fullwidith">
+
+    <!-- Login Wrap  -->
+    <form method="post" action="<?php echo $this->basePath(); ?>/user/login">
+        <div class="login-wrap">
+            <img src="<?php echo $this->basePath(); ?>/img/theme/logo.png" class="login-img" alt="logo"/><br/>
+            <div class="login-c1">
+                <div class="cpadding50">
+                    <input type="text" name="identity" class="form-control logpadding" placeholder="Username">
+                    <br/>
+                    <input type="password" name="credential" class="form-control logpadding" placeholder="Password">
+                </div>
+            </div>
+            <div class="login-c2">
+                <div class="logmargfix">
+                    <div class="chpadding50">
+                        <div class="alignbottom">
+                            <button class="btn-search4"  type="submit" onclick="errorMessage()">Submit</button>
+                        </div>
+                        <div class="alignbottom2">
+
+                            <!--<img src="<?php /*echo $this->basePath(); */?>/img/google_login_icon.png">-->
+                            <div>
+                                <a href="<?php echo $this->basePath(); ?>/user/login/facebook"><img class="fb_login_click" src="<?php echo $this->basePath(); ?>/img/fb_login_icon.png"></a>
+                                <a href="<?php echo $this->basePath(); ?>/user/login/google"><img class="google_login_click" src="<?php echo $this->basePath(); ?>/img/google_login_icon.png"></a>
+                            </div>
+
+                            <!--<div class="checkbox">
+                                <label>
+                                    <input type="checkbox">Remember
+                                </label>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="login-c3">
+                <div class="left"><a href="#" class="whitelink"><span></span>Website</a></div>
+                <div class="right"><a href="#" class="whitelink">Lost password?</a></div>
+            </div>
+            <div class="login-c3">
+                <div class="left"><a href="<?php echo $this->basePath(); ?>" class="whitelink"><span></span>Website</a></div>
+                <div class="right"><a href="#" class="whitelink">Lost password?</a></div>
+            </div>
+        </div>
+    </form>
+    <!-- End of Login Wrap  -->
+
+</div>
+<!-- End of Container  -->
+
+<!-- Javascript  -->
+<script src="<?php echo $this->basePath(); ?>/js/theme/initialize-loginpage.js"></script>
+<script src="<?php echo $this->basePath(); ?>/js/theme/jquery.easing.js"></script>
+<!-- Load Animo -->
+<script src="<?php echo $this->basePath(); ?>/js/libraries/animo/animo.js"></script>
+<script>
+    function errorMessage(){
+        $('.login-wrap').animo( { animation: 'tada' } );
+    }
+</script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="<?php echo $this->basePath(); ?>/js/bootstrap.min.js"></script>
+</body>
+</html>

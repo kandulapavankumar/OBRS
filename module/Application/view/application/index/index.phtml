@@ -1,0 +1,481 @@
+<div class="slideup">
+<div class="container z-index100">
+<div class="slidercontainer">
+
+<div class="row">
+<div class="col-md-4 scolleft">
+
+<ul class="nav nav-tabs myTab2pos" id="main_select_bus">
+    <li class="active"><a data-toggle="tab" href="#bus_tab" ><span class="bustab3"></span><span class="hidetext">Bus</span>&nbsp;</a></li>
+    <li class=""><a data-toggle="tab" href="#air_tab"><span class="flighttab3"></span><span class="hidetext">Air</span>&nbsp;</a></li>
+    <li class=""><a data-toggle="tab" href="#train_tab"><span class="hoteltab3"></span><span class="hidetext">Train</span>&nbsp;</a></li>
+</ul>
+<style>
+    #main_select_bus>li.active>a{
+        color:#000000;
+    }
+    #main_select_bus>li>a{
+        color:#ffffff;
+    }
+</style>
+
+<!--<div class="w50percent">
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+            <span class="hotel-ico"></span> Hotels
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+            <span class="flight-ico"></span> Flights
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+            <span class="suitcase-ico"></span> Vacations
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios4" value="option2">
+            <span class="car-ico"></span> Cars
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios5" value="option2">
+            <span class="cruise-ico"></span>Cruises
+        </label>
+    </div>
+</div>
+
+<div class="w50percentlast">
+    <p class="cstyle08">Packages:</p>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios6" value="option2">
+            Flight + Hotel + Car
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios7" value="option2">
+            Flight + Hotel
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios8" value="option2">
+            Flight + Car
+        </label>
+    </div>
+    <div class="radio">
+        <label>
+            <input type="radio" name="optionsRadios" id="optionsRadios9" value="option2">
+            Hotel + Car
+        </label>
+    </div>
+</div>-->
+
+<div class="clearfix"></div><br/>
+<div class="tab-content">
+    <div class="tab-pane active" id="bus_tab">
+        <div class="w50percent">
+            <div class="wh90percent textleft">
+                <span class="opensans size13"><b>Flying from</b></span>
+                <input type="text" class="form-control" placeholder="City or airport">
+            </div>
+        </div>
+
+        <div class="w50percentlast">
+            <div class="wh90percent textleft right">
+                <span class="opensans size13"><b>To</b></span>
+                <input type="text" class="form-control" placeholder="City or airport">
+            </div>
+        </div>
+
+
+        <div class="clearfix"></div><br/>
+
+        <div class="w50percent">
+            <div class="wh90percent textleft">
+                <span class="opensans size13"><b>Departing</b></span>
+                <input type="text" class="form-control mySelectCalendar" id="datepicker3" placeholder="mm/dd/yyyy"/>
+            </div>
+        </div>
+
+        <div class="w50percentlast">
+            <div class="wh90percent textleft right">
+                <span class="opensans size13"><b>Returning</b></span>
+                <input type="text" class="form-control mySelectCalendar" id="datepicker4" placeholder="mm/dd/yyyy"/>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="room1 margtop15">
+            <div class="w50percent">
+                <div class="wh90percent textleft">
+                    <span class="opensans size13"><b>Adult</b></span>
+                    <select class="form-control mySelectBoxClass">
+                        <option>1</option>
+                        <option selected>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="w50percentlast">
+                <div class="wh90percent textleft right">
+                    <span class="opensans size13"><b>Child</b></span>
+                    <select class="form-control mySelectBoxClass">
+                        <option>0</option>
+                        <option selected>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </div>
+            </div>
+            <div>
+                <form action="list4.html">
+                    <button type="submit" class="btn-search3" style="position: relative;margin-top: 35px;">Search</button>
+                </form>
+            </div>
+
+        </div><div class="clearfix"></div>
+
+    </div>
+
+    <div class="tab-pane" id="air_tab">
+    air
+    </div>
+    <div class="tab-pane" id="train_tab" style="min-height: 200px;">
+    train
+    </div>
+
+</div>
+
+
+
+
+
+
+
+</div>
+<div class="col-md-8 scolright">
+
+<!--
+#################################
+    - THEMEPUNCH BANNER -
+#################################
+-->
+
+<div class="fullwidthbanner">
+    <ul >
+
+        <!-- papercut fade turnoff flyin slideright slideleft slideup slidedown-->
+
+        <!-- FADE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+            <img src="<?php echo $this->basePath(); ?>/img/theme/slider/bahamas.jpg" alt=""/>
+            <div class="tp-caption  sfl"
+                 data-x="0"
+                 data-y="10"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="slidecouple"></div>
+            </div>
+            <div class="tp-caption sfb"
+                 data-x="left"
+                 data-y="371"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="blacklable">
+                    <h4 class="lato bold white">Bahamas from <span class="green">$1.500</span> per week</h4>
+                    <h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+                </div>
+            </div>
+            <div class="tp-caption scrolleffect sfr"
+                 data-x="right"
+                 data-y="100"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="sboxpurple textcenter">
+                    <span class="lato size18 slim caps white">Islands</span><br/><br/><br/>
+                    <span class="lato size65 slim caps white">Bahamas</span><br/>
+                    <span class="lato size13 normal caps white">from</span><br/><br/>
+                    <span class="lato size40 slim caps yellow">$1500</span><br/>
+                </div>
+            </div>
+        </li>
+
+        <!-- FADE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+            <img src="<?php echo $this->basePath(); ?>/img/theme/slider/rome.jpg" alt=""/>
+            <div class="tp-caption scrolleffect sft"
+                 data-x="center"
+                 data-y="100"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="sboxpurple textcenter">
+                    <span class="lato size28 slim caps white">Italy</span><br/><br/><br/>
+                    <span class="lato size100 slim caps white">Rome</span><br/>
+                    <span class="lato size20 normal caps white">from</span><br/><br/>
+                    <span class="lato size48 slim uppercase yellow">$1500</span><br/>
+                </div>
+            </div>
+            <div class="tp-caption sfb"
+                 data-x="left"
+                 data-y="371"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="blacklable">
+                    <h4 class="lato bold white">Rome from <span class="green">$1.500</span> per week</h4>
+                    <h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+                </div>
+            </div>
+        </li>
+
+        <!-- FADE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+
+            <img src="<?php echo $this->basePath(); ?>/img/theme/slider/paris.jpg" alt=""/>
+            <div class="tp-caption scrolleffect sft"
+                 data-x="center"
+                 data-y="100"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="sboxpurple textcenter">
+                    <span class="lato size28 slim caps white">France</span><br/><br/><br/>
+                    <span class="lato size100 slim caps white">Paris</span><br/>
+                    <span class="lato size20 normal caps white">from</span><br/><br/>
+                    <span class="lato size48 slim uppercase yellow">$1500</span><br/>
+                </div>
+            </div>
+            <div class="tp-caption sfb"
+                 data-x="left"
+                 data-y="371"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo" >
+                <div class="blacklable">
+                    <h4 class="lato bold white">Paris from <span class="green">$1.500</span> per week</h4>
+                    <h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+                </div>
+            </div>
+        </li>
+
+        <!-- FADE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+            <img src="<?php echo $this->basePath(); ?>/img/theme/slider/zakynthos.jpg" alt=""/>
+            <div class="tp-caption scrolleffect sft"
+                 data-x="center"
+                 data-y="100"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="sboxpurple textcenter">
+                    <span class="lato size28 slim caps white">Greece</span><br/><br/><br/>
+                    <span class="lato size100 slim caps white">Zakynthos</span><br/>
+                    <span class="lato size20 normal caps white">from</span><br/><br/>
+                    <span class="lato size48 slim uppercase yellow">$1500</span><br/>
+                </div>
+            </div>
+            <div class="tp-caption sfb"
+                 data-x="left"
+                 data-y="371"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="blacklable">
+                    <h4 class="lato bold white">Zakynthos from <span class="green">$1.500</span> per week</h4>
+                    <h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+                </div>
+            </div>
+        </li>
+
+        <!-- FADE -->
+        <li data-transition="fade" data-slotamount="1" data-masterspeed="300">
+            <img src="<?php echo $this->basePath(); ?>/img/theme/slider/santorini.jpg" alt=""/>
+            <div class="tp-caption scrolleffect sft"
+                 data-x="center"
+                 data-y="100"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="sboxpurple textcenter">
+                    <span class="lato size28 slim caps white">Greece</span><br/><br/><br/>
+                    <span class="lato size100 slim caps white">Santorini</span><br/>
+                    <span class="lato size20 normal caps white">from</span><br/><br/>
+                    <span class="lato size48 slim uppercase yellow">$1500</span><br/>
+                </div>
+            </div>
+            <div class="tp-caption sfb"
+                 data-x="left"
+                 data-y="371"
+                 data-speed="1000"
+                 data-start="800"
+                 data-easing="easeOutExpo"  >
+                <div class="blacklable">
+                    <h4 class="lato bold white">Santorini from <span class="green">$1.500</span> per week</h4>
+                    <h5 class="lato grey mt-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ut egestas ligula</h5>
+                </div>
+            </div>
+        </li>
+
+    </ul>
+    <div class="tp-bannertimer none"></div>
+</div>
+
+<!--
+##############################
+ - ACTIVATE THE BANNER HERE -
+##############################
+-->
+<script type="text/javascript">
+
+    var tpj=jQuery;
+    tpj.noConflict();
+
+    tpj(document).ready(function() {
+
+        if (tpj.fn.cssOriginal!=undefined)
+            tpj.fn.css = tpj.fn.cssOriginal;
+
+        var api = tpj('.fullwidthbanner').revolution(
+            {
+                delay:9000,
+                startwidth:960,
+                startheight:446,
+
+                onHoverStop:"on",						// Stop Banner Timet at Hover on Slide on/off
+
+                thumbWidth:100,							// Thumb With and Height and Amount (only if navigation Tyope set to thumb !)
+                thumbHeight:50,
+                thumbAmount:3,
+
+                hideThumbs:0,
+                navigationType:"bullet",				// bullet, thumb, none
+                navigationArrows:"solo",				// nexttobullets, solo (old name verticalcentered), none
+
+                navigationStyle:"round",				// round,square,navbar,round-old,square-old,navbar-old, or any from the list in the docu (choose between 50+ different item), custom
+
+
+                navigationHAlign:"right",				// Vertical Align top,center,bottom
+                navigationVAlign:"bottom",					// Horizontal Align left,center,right
+                navigationHOffset:30,
+                navigationVOffset:30,
+
+                soloArrowLeftHalign:"left",
+                soloArrowLeftValign:"center",
+                soloArrowLeftHOffset:20,
+                soloArrowLeftVOffset:0,
+
+                soloArrowRightHalign:"right",
+                soloArrowRightValign:"center",
+                soloArrowRightHOffset:20,
+                soloArrowRightVOffset:0,
+
+                touchenabled:"on",						// Enable Swipe Function : on/off
+
+
+                stopAtSlide:-1,							// Stop Timer if Slide "x" has been Reached. If stopAfterLoops set to 0, then it stops already in the first Loop at slide X which defined. -1 means do not stop at any slide. stopAfterLoops has no sinn in this case.
+                stopAfterLoops:-1,						// Stop Timer if All slides has been played "x" times. IT will stop at THe slide which is defined via stopAtSlide:x, if set to -1 slide never stop automatic
+
+                hideCaptionAtLimit:0,					// It Defines if a caption should be shown under a Screen Resolution ( Basod on The Width of Browser)
+                hideAllCaptionAtLilmit:0,				// Hide all The Captions if Width of Browser is less then this value
+                hideSliderAtLimit:0,					// Hide the whole slider, and stop also functions if Width of Browser is less than this value
+
+
+                fullWidth:"on",
+
+                shadow:1								//0 = no Shadow, 1,2,3 = 3 Different Art of Shadows -  (No Shadow in Fullwidth Version !)
+
+            });
+
+
+
+
+
+
+        // TO HIDE THE ARROWS SEPERATLY FROM THE BULLETS, SOME TRICK HERE:
+        // YOU CAN REMOVE IT FROM HERE TILL THE END OF THIS SECTION IF YOU DONT NEED THIS !
+        api.bind("revolution.slide.onloaded",function (e) {
+
+
+            jQuery('.tparrows').each(function() {
+                var arrows=jQuery(this);
+
+                var timer = setInterval(function() {
+
+                    if (arrows.css('opacity') == 1 && !jQuery('.tp-simpleresponsive').hasClass("mouseisover"))
+                        arrows.fadeOut(300);
+                },3000);
+            })
+
+            jQuery('.tp-simpleresponsive, .tparrows').hover(function() {
+                jQuery('.tp-simpleresponsive').addClass("mouseisover");
+                jQuery('body').find('.tparrows').each(function() {
+                    jQuery(this).fadeIn(300);
+                });
+            }, function() {
+                if (!jQuery(this).hasClass("tparrows"))
+                    jQuery('.tp-simpleresponsive').removeClass("mouseisover");
+            })
+        });
+        // END OF THE SECTION, HIDE MY ARROWS SEPERATLY FROM THE BULLETS
+
+    });
+
+
+
+
+    jQuery(document).ready(function($){
+        // gets the width of black bar at the bottom of the slider
+        var $gwsr = $('.scolright').outerWidth();
+        $('.blacklable').css({'width' : $gwsr +'px'});
+    });
+    jQuery(window).resize(function() {
+        jQuery(document).ready(function($){
+
+            // gets the width of black bar at the bottom of the slider
+            var $gwsr = $('.scolright').outerWidth();
+            $('.blacklable').css({'width' : $gwsr +'px'});
+
+        });
+    });
+
+
+
+
+
+
+</script>
+
+
+</div>
+
+</div><!-- end of row -->
+</div>
+</div>
+</div>
+<div style="position: relative;">
+
+</div>
+<!-- Custom functions -->
+
+<!-- This page JS -->
+<script src="<?php echo $this->basePath(); ?>/js/theme/js-index7.js"></script>
